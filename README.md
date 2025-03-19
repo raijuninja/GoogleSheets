@@ -8,11 +8,11 @@ This module provides functions to interact with Google Sheets using a Google Ser
 
 Retrieves an access token for a Google Service Account.
 
-#### Parameters 1
+#### Get-GoogleServiceAccountToken Parameters
 
 - `-CredentialsPath` (Mandatory): Path to the service account key JSON file.
 
-#### Example 1
+#### Get-GoogleServiceAccountToken Example
 
 ```powershell
 Get-GoogleServiceAccountToken -CredentialsPath "path/to/service-account-key.json"
@@ -24,12 +24,12 @@ Get-GoogleServiceAccountToken -CredentialsPath "path/to/service-account-key.json
 
 Creates a new Google Sheets spreadsheet for error tracking.
 
-#### Parameters 2
+#### New-ErrorTrackingSpreadsheet Parameters
 
 - `-CredentialsPath` (Mandatory): Path to the service account key JSON file.
 - `-ErrorSheetName` (Optional): Name of the sheet for error tracking. Default is "Errors".
 
-#### Example 2
+#### New-ErrorTrackingSpreadsheet Example
 
 ```powershell
 New-ErrorTrackingSpreadsheet -CredentialsPath "path/to/service-account-key.json" -ErrorSheetName "CustomErrorSheet"
